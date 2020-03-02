@@ -1,5 +1,6 @@
 using App.Data;
 using System;
+using System.Collections.Generic;
 using UnityEditor;
 using UnityEngine;
 
@@ -14,7 +15,10 @@ namespace App.Editor
 		}
 
 		private readonly ContentImporter _importer = new ContentImporter();
-
+		
+		private static readonly HashSet<string> _extensions = new HashSet<string> {"png", "jpg", "mp4"};
+		private static readonly string _extensionsString = string.Join(",", _extensions);
+		
 		private string _currentAssetPath;
 		private ContentType _currentContentType;
 
@@ -26,7 +30,7 @@ namespace App.Editor
 			EditorGUILayout.TextField("File to import", _currentAssetPath);
 			if (GUILayout.Button("Choose", EditorStyles.miniButton, GUILayout.Width(70f)))
 			{
-				_currentAssetPath = EditorUtility.OpenFilePanel("Choose file to import", "", "png,jpg,mp4");
+				_currentAssetPath = EditorUtility.OpenFilePanel("Choose file to import", "", _extensionsString);
 			}
 			EditorGUILayout.EndHorizontal();
 
@@ -55,6 +59,7 @@ namespace App.Editor
 		{
 			_chronologicalContent.Label = EditorGUILayout.TextField("Asset label", _chronologicalContent.Label);
 			_chronologicalContent.Timestamp = Utility.DateField("Date", _chronologicalContent.Timestamp);
+			
 		}
 	}
 }

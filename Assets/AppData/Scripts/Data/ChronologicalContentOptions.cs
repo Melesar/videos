@@ -7,5 +7,6 @@ namespace App.Data
 	{
 		public string Label;
 		public long Timestamp;
+		public bool IsVideo;
 	}
 }

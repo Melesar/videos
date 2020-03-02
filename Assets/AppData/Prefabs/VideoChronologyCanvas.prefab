@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 8434735755711616115}
   - component: {fileID: 3189262441100269885}
   - component: {fileID: 7605152726858504485}
+  - component: {fileID: 5832081998249733962}
   m_Layer: 5
   m_Name: VideoChronologyCanvas
   m_TagString: Untagged
@@ -88,3 +89,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5b6456b674f244a5bdf16ed7daef7226, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _widgetsPool: {fileID: 11400000, guid: 32c456e71bd3c564e85555fcd604e9d4, type: 2}
+  _numSteps: 0
+  _loader: {fileID: 5832081998249733962}
+--- !u!114 &5832081998249733962
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3480333081420776844}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c0a4323b8a404d4c999c6c40460b8d6a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _widgetsPool: {fileID: 11400000, guid: 32c456e71bd3c564e85555fcd604e9d4, type: 2}
+  _contentChoosingStrategy: {fileID: 11400000, guid: fc9a87737e5688e47b0ab5e4e7d0133a,
+    type: 2}
