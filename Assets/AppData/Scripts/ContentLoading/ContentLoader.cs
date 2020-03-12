@@ -9,13 +9,11 @@ namespace App.ContentLoading
 	public class ContentLoader : MonoBehaviour
 	{
 		[SerializeField] private WidgetsPool _widgetsPool;
-		[SerializeField] private AbstractContentChoosingStrategy _contentChoosingStrategy;
 
-		public AbstractWidget LoadContentAndSpawnWidget()
+		public AbstractWidget LoadContentAndSpawnWidget(ChronologicalContentOptions contentOptions)
 		{
-			ChronologicalContentOptions contentOptions = _contentChoosingStrategy.GetContent();
 			AbstractWidget widget = contentOptions.IsVideo ? (AbstractWidget) _widgetsPool.GetVideo() : _widgetsPool.GetImage();
-			widget.OnStartLoadingContent();
+			widget.gameObject.SetActive(false);
 			if (contentOptions.IsVideo)
 			{
 				Addressables.LoadAssetAsync<VideoClip>(contentOptions.Label).CompletedTypeless += widget.OnContentLoaded;

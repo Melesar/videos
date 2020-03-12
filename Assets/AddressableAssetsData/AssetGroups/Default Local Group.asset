@@ -17,10 +17,18 @@ MonoBehaviour:
     m_SerializedData: []
   m_GUID: 5ee0560d9edab4c46b5ddb9772c3b29f
   m_SerializeEntries:
+  - m_GUID: 38563b51fc8cafc42a4cfb7b8a964814
+    m_Address: Image_2
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_mainAssetType: UnityEngine.Texture2D, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
   - m_GUID: 891ced5b506aa1348bd21e70bc409101
     m_Address: Image_1
     m_ReadOnly: 0
     m_SerializedLabels: []
+    m_mainAssetType: UnityEngine.Texture2D, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
   m_ReadOnly: 0
   m_Settings: {fileID: 11400000, guid: a32c859cab046e349a1c972bbea75bd3, type: 2}
   m_SchemaSet:
