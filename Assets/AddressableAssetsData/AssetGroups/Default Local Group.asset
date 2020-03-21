@@ -23,6 +23,12 @@ MonoBehaviour:
     m_SerializedLabels: []
     m_mainAssetType: UnityEngine.Texture2D, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
+  - m_GUID: 782155e1199052a48b52e8d5a45223ce
+    m_Address: Video_1
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_mainAssetType: UnityEngine.Video.VideoClip, UnityEngine.VideoModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
   - m_GUID: 891ced5b506aa1348bd21e70bc409101
     m_Address: Image_1
     m_ReadOnly: 0

@@ -16,6 +16,7 @@ namespace App.Animations
 		[SerializeField] private TextMeshProUGUI _feedbackText;
 		[SerializeField] private ContentLoader _loader;
 		[SerializeField] private Transform _mainParent;
+		[SerializeField] private CanvasGroup _canvasGroup;
 		[SerializeField] private Transform _topParent;
 		[SerializeField] private Transform _bottomParent;
 
@@ -41,26 +42,43 @@ namespace App.Animations
 			yield return StartCoroutine(ShowFeedback(context, FeedbackSpot.BetweenImages));
 
 			yield return StartCoroutine(ShowMain(widgetSecond));
+
+			ArrangeWidgets(widgetFirst, widgetSecond);
+
+			yield return StartCoroutine(ShowWidgets());
 		}
 
 		private IEnumerator ShowFeedback(ChronologicalAnimationContext context, FeedbackSpot spot)
 		{
 			context.FeedbackCommand.Execute(_feedback, spot);
 			_feedbackText.gameObject.SetActive(true);
-			yield return _feedbackText.DOFade(1f, 1f);
+			yield return _feedbackText.DOFade(1f, 1f).WaitForCompletion();
 			yield return new WaitForSeconds(2f);
-			yield return _feedbackText.DOFade(0f, 1f);
+			yield return _feedbackText.DOFade(0f, 0.4f).WaitForCompletion();
 			_feedbackText.gameObject.SetActive(false);
 		}
 
 		private IEnumerator ShowMain(AbstractWidget widget)
 		{
-			widget.RectTransform.SetParent(_mainParent);
-			widget.RectTransform.localPosition = Vector3.zero;
+			widget.Reparent(_mainParent);
 			
 			yield return widget.Show().WaitForCompletion();
 			yield return new WaitForSeconds(3f);
 			yield return widget.Hide().WaitForCompletion();
+		}
+
+		private IEnumerator ShowWidgets()
+		{
+			yield return _canvasGroup.DOFade(1f, 1.5f).WaitForCompletion();
+		}
+
+		private void ArrangeWidgets(AbstractWidget widgetFirst, AbstractWidget widgetSecond)
+		{
+			_canvasGroup.alpha = 0f;
+			widgetFirst.Reparent(_topParent);
+			widgetSecond.Reparent(_bottomParent);
+			widgetFirst.ShowImmediately();
+			widgetSecond.ShowImmediately();
 		}
 
 		private void Awake()

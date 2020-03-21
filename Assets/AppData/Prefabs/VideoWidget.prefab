@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 596860260866296774}
   - component: {fileID: 997107763830764919}
   - component: {fileID: 4224574353237097172}
+  - component: {fileID: 710635703473618126}
   m_Layer: 5
   m_Name: VideoWidget
   m_TagString: Untagged
@@ -103,7 +104,7 @@ VideoPlayer:
   m_ControlledAudioTrackCount: 1
   m_PlayOnAwake: 1
   m_SkipOnDrop: 1
-  m_Looping: 0
+  m_Looping: 1
   m_WaitForFirstFrame: 1
   m_FrameReadyEventEnabled: 0
 --- !u!114 &4224574353237097172
@@ -118,3 +119,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c1b7d73e21d8482eaec99251b5e0b693, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _videoPlayer: {fileID: 997107763830764919}
+  _rawImage: {fileID: 596860260866296774}
+--- !u!225 &710635703473618126
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4274306309679155499}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0

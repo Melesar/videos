@@ -5,7 +5,7 @@ using UnityEngine;
 namespace App.ContentLoading
 {
 	
-	[CreateAssetMenu(fileName = nameof(RandomContentChoosingStrategy), menuName = "App/Content choosing strategy")]
+	[CreateAssetMenu(fileName = nameof(RandomContentChoosingStrategy), menuName = "App/Random content choosing strategy")]
 	public class RandomContentChoosingStrategy : AbstractContentChoosingStrategy
 	{
 		public override ChronologicalContentOptions GetContent()
