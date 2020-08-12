@@ -21,6 +21,7 @@ namespace App.Animations
 		[SerializeField] private Transform _bottomParent;
 
 		private IFeedback _feedback;
+		private DecisionStatus _decisionStatus;
 		
 		public void StartAnimation(ChronologicalAnimationContext context)
 		{
@@ -29,9 +30,11 @@ namespace App.Animations
 
 		private IEnumerator AnimationCoroutine(ChronologicalAnimationContext context)
 		{
-			float random = Random.value;
-			ChronologicalContentOptions first = random > 0.5f ? context.RightOption : context.WrongOption;
-			ChronologicalContentOptions second = random > 0.5f ? context.WrongOption : context.RightOption;
+			_decisionStatus = DecisionStatus.None;
+			
+			bool isFirstOptionRight = Random.value > 0.5f;
+			ChronologicalContentOptions first = isFirstOptionRight ? context.RightOption : context.WrongOption;
+			ChronologicalContentOptions second = isFirstOptionRight ? context.WrongOption : context.RightOption;
 			AbstractWidget widgetFirst = _loader.LoadContentAndSpawnWidget(first);
 			AbstractWidget widgetSecond = _loader.LoadContentAndSpawnWidget(second);
 
@@ -46,6 +49,19 @@ namespace App.Animations
 			ArrangeWidgets(widgetFirst, widgetSecond);
 
 			yield return StartCoroutine(ShowWidgets());
+
+			AbstractWidget rightWidget = isFirstOptionRight ? widgetFirst : widgetSecond;
+			AbstractWidget wrongWidget = isFirstOptionRight ? widgetSecond : widgetFirst;
+			rightWidget.SetOnClicked(() => _decisionStatus = DecisionStatus.Right);
+			wrongWidget.SetOnClicked(() => _decisionStatus = DecisionStatus.Wrong);
+
+			yield return new WaitWhile(() => _decisionStatus == DecisionStatus.None);
+
+			FeedbackSpot feedback = _decisionStatus == DecisionStatus.Right ? FeedbackSpot.OnSuccess : FeedbackSpot.OnFailure;
+			widgetFirst.HideImmediately();
+			widgetSecond.HideImmediately();
+			yield return StartCoroutine(ShowFeedback(context, feedback));
+			context.OnAnimationFinish?.Invoke();
 		}
 
 		private IEnumerator ShowFeedback(ChronologicalAnimationContext context, FeedbackSpot spot)
@@ -84,6 +100,13 @@ namespace App.Animations
 		private void Awake()
 		{
 			_feedback = new Feedback.Feedback(_feedbackText);
+		}
+
+		private enum DecisionStatus
+		{
+			None,
+			Right,
+			Wrong
 		}
 	}
 }

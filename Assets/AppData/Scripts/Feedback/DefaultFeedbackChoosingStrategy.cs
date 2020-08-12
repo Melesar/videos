@@ -9,13 +9,13 @@ namespace App.Feedback
 			switch (spot)
 			{
 				case FeedbackSpot.BeforeImages:
-					return "Guess what";
+					return "Co było później?";
 				case FeedbackSpot.BetweenImages:
-					return "Or";
+					return "Albo";
 				case FeedbackSpot.OnSuccess:
-					return "Right";
+					return "Bardzo dobrze!";
 				case FeedbackSpot.OnFailure:
-					return "Wrong";
+					return "Nie! Spróbuj jeszcze ;)";
 				default:
 					throw new ArgumentOutOfRangeException(nameof(spot), spot, null);
 			}

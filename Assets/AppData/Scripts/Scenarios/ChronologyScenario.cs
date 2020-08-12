@@ -34,7 +34,8 @@ namespace App.Scenarios
 			{
 				RightOption = correct,
 				WrongOption = wrong,
-				FeedbackCommand = _feedbackCommand
+				FeedbackCommand = _feedbackCommand,
+				OnAnimationFinish = onFinish
 			});
 		}
 
