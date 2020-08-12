@@ -17,24 +17,132 @@ MonoBehaviour:
     m_SerializedData: []
   m_GUID: 5ee0560d9edab4c46b5ddb9772c3b29f
   m_SerializeEntries:
-  - m_GUID: 38563b51fc8cafc42a4cfb7b8a964814
-    m_Address: Image_2
+  - m_GUID: 0140814356793c04fab23bf47dc08b6a
+    m_Address: photo_5
     m_ReadOnly: 0
     m_SerializedLabels: []
-    m_mainAssetType: UnityEngine.Texture2D, UnityEngine.CoreModule, Version=0.0.0.0,
-      Culture=neutral, PublicKeyToken=null
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 0c3071ea87929d34ea05094cb70fa610
+    m_Address: photo_9
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 2cbd9ae1b4d24f04da09ee1201bb49e1
+    m_Address: photo_8
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 3c5ed5458d717b348ae11f8a1fa45828
+    m_Address: photo_4
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 3f1e2ae805a5fed49bd93c0109861cfd
+    m_Address: photo_15
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 47b6631864c554a4395c245675989f9a
+    m_Address: photo_3
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 5be1cfe8509dd8545bdad25f255bad74
+    m_Address: video_2
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 6c64a9ae4ea1d784ab2018ac7841c639
+    m_Address: photo_17
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 6e73abd42e2f9814381d4be67296c0b1
+    m_Address: photo_11
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 755cfed705ff49e4ba95b4f144d3b1a6
+    m_Address: photo_6
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 75e88d417c3d72d47863db26866ca0c2
+    m_Address: photo_12
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
   - m_GUID: 782155e1199052a48b52e8d5a45223ce
-    m_Address: Video_1
+    m_Address: video_1
     m_ReadOnly: 0
     m_SerializedLabels: []
-    m_mainAssetType: UnityEngine.Video.VideoClip, UnityEngine.VideoModule, Version=0.0.0.0,
-      Culture=neutral, PublicKeyToken=null
-  - m_GUID: 891ced5b506aa1348bd21e70bc409101
-    m_Address: Image_1
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 7bfbc34f718fdea4e8c042acfa0dcb90
+    m_Address: photo_1
     m_ReadOnly: 0
     m_SerializedLabels: []
-    m_mainAssetType: UnityEngine.Texture2D, UnityEngine.CoreModule, Version=0.0.0.0,
-      Culture=neutral, PublicKeyToken=null
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 7d74f583b67164c41852b33807cbbfef
+    m_Address: photo_18
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 8229590957cba694bbc46454330dc2c0
+    m_Address: photo_13
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 8fd764fa4dd589849818fce8a322cc6e
+    m_Address: photo_16
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 9f6e5a4c42c158245bf1123028431621
+    m_Address: photo_10
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: a3e2a340449e69d49a660de90dd8074e
+    m_Address: photo_7
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: d573344e8768b5c499d9d618724fd8dd
+    m_Address: photo_13
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: db159cf38ab2a9946907ac3584459004
+    m_Address: video_3
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: f9703c1fb70526c49a4c72be99787221
+    m_Address: photo_2
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
   m_ReadOnly: 0
   m_Settings: {fileID: 11400000, guid: a32c859cab046e349a1c972bbea75bd3, type: 2}
   m_SchemaSet:

@@ -1,6 +1,6 @@
 {
   "dependencies": {
-    "com.unity.addressables": "1.6.2",
+    "com.unity.addressables": "1.8.4",
     "com.unity.device-simulator": "2.0.0-preview",
     "com.unity.ide.rider": "1.1.4",
     "com.unity.textmeshpro": "2.0.1",
