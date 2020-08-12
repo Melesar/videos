@@ -173,6 +173,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 0
+  m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -467,6 +468,12 @@ PrefabInstance:
       propertyPath: m_Name
       value: VideoChronologyCanvas
       objectReference: {fileID: 0}
+    - target: {fileID: 7605152726858504485, guid: 2e5e9bbfd02e6ff449490d703085aa24,
+        type: 3}
+      propertyPath: _contentChoosingStrategy
+      value: 
+      objectReference: {fileID: 11400000, guid: fc9a87737e5688e47b0ab5e4e7d0133a,
+        type: 2}
     - target: {fileID: 8424561532550258782, guid: 2e5e9bbfd02e6ff449490d703085aa24,
         type: 3}
       propertyPath: m_LocalPosition.x

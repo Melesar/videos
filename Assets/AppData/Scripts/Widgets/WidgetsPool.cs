@@ -23,7 +23,7 @@ namespace App.Widgets
 			return Get(_videosPool, _videoPrefab);
 		}
 
-		private void OnEnable()
+		public void Init()
 		{
 			if (!Application.isPlaying)
 			{

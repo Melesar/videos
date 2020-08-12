@@ -1,5 +1,6 @@
 using App.Data;
 using App.Widgets;
+using System;
 using UnityEngine;
 using UnityEngine.AddressableAssets;
 using UnityEngine.Video;
@@ -25,7 +26,10 @@ namespace App.ContentLoading
 
 			return widget;
 		}
-		
-		
+
+		private void Awake()
+		{
+			_widgetsPool.Init();
+		}
 	}
 }

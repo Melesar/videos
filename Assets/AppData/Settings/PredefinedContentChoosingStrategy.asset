@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0fdc6a15d3ee4fbea661b5888f1d9e11, type: 3}
   m_Name: PredefinedContentChoosingStrategy
   m_EditorClassIdentifier: 
-  _contentLayoutAsset: {fileID: 0}
-  _indexFirst: 0
-  _indexSecond: 0
+  _contentLayoutAsset: {fileID: 4900000, guid: 809bc4107aef3aa429feb359f3aec9f0, type: 3}
+  _indexFirst: 19
+  _indexSecond: 20
